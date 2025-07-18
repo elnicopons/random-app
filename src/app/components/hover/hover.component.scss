@@ -1,0 +1,15 @@
+:host {
+  display: inline-block;
+}
+
+.hover {
+  perspective: 1000px;
+  display: inline-block;
+
+  &-card {
+    display: inline-block;
+    transition: transform 0.1s ease;
+    transform-style: preserve-3d;
+    will-change: transform;
+  }
+}

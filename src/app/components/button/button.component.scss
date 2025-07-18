@@ -1,0 +1,16 @@
+@use "sass:color";
+@import "variables";
+
+.button {
+  background-color: $primary-color;
+  border: none;
+  border-radius: 1rem;
+  color: $foreground-white;
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  transition: 0.5s;
+
+  &:hover {
+    background-color: $primary-color-dark;
+  }
+}

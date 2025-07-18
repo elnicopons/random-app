@@ -1,0 +1,20 @@
+<ul class="list-container">
+  <li class="list-container__list-item" *ngFor="let item of items">
+    <div class="row align-items-center">
+      <div class="col-2 col-md-1">
+        <fa-icon [icon]="item.icon" size="2x"></fa-icon>
+      </div>
+      <div class="col-10 col-md-11">
+        <ng-container *ngIf="type === 'percent'">
+          <app-bar [percentage]="item.value" [colored]="colored"></app-bar>
+        </ng-container>
+        <ng-container *ngIf="type === 'review'">
+          <app-review [value]="item.value"></app-review>
+        </ng-container>
+      </div>
+    </div>
+    <div class="mt-2">
+      <h4>{{ item.description }}</h4>
+    </div>
+  </li>
+</ul>

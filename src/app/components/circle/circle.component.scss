@@ -1,0 +1,30 @@
+@import "variables";
+@import "mixins";
+
+.circle {
+  border-radius: 100%;
+  overflow: hidden;
+
+  &.S {
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  &.M {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  &.L {
+    max-width: 500px;
+    max-height: 500px;
+  }
+
+  &-border {
+    border: $border-width-fat solid $primary-color;
+  }
+
+  &-shadow {
+    @include shadow;
+  }
+}

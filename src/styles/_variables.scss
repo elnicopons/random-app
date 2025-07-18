@@ -1,0 +1,17 @@
+@use "sass:color";
+
+//colors
+$background-black: #0c0c0c;
+$foreground-white: #eeeeee;
+$primary-color: #027ac9;
+$primary-color-dark: color.adjust($primary-color, $lightness: -15%);
+
+//border
+$border-width-fat: 3px;
+$border-width-thin: 1px;
+$border-radius: 2px;
+$border-grey: #0a0a0a;
+
+//transition
+$transition-duration: 0.75s;
+$transition-timing-function: ease-in-out;

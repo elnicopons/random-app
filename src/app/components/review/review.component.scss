@@ -1,0 +1,32 @@
+@import "variables";
+
+.review {
+  &__icon {
+    display: inline-block;
+    color: $primary-color;
+    stroke: black;
+    stroke-width: 1rem;
+
+    &.enable-animation {
+      animation: move-animation 2s infinite ease-in-out;
+    }
+  }
+}
+
+@keyframes move-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

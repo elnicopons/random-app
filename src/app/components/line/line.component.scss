@@ -1,0 +1,56 @@
+@import "variables";
+
+.line {
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    &.reverse {
+      align-items: flex-end;
+    }
+  }
+
+  &__item {
+    background-color: $primary-color;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    border-radius: $border-radius;
+
+    &.enable-animation {
+      width: 0%;
+    }
+
+    &-height-xs {
+      height: 0.5rem !important;
+    }
+    &-height-s {
+      height: 1rem !important;
+    }
+    &-height-m {
+      height: 2rem !important;
+    }
+    &-height-l {
+      height: 3rem !important;
+    }
+    &-height-xl {
+      height: 4rem !important;
+    }
+
+    &-width-xs {
+      width: 10% !important;
+    }
+    &-width-s {
+      width: 25% !important;
+    }
+    &-width-m {
+      width: 50% !important;
+    }
+    &-width-l {
+      width: 75% !important;
+    }
+    &-width-xl {
+      width: 100% !important;
+    }
+  }
+}

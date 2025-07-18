@@ -1,0 +1,17 @@
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  &__list-item {
+  }
+}

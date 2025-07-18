@@ -1,0 +1,10 @@
+@use "sass:color";
+@import "variables";
+
+.home {
+  &__buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}

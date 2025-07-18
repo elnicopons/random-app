@@ -1,0 +1,19 @@
+<div class="random-card" (click)="onClick()">
+  <h3>{{ text }}</h3>
+  <div class="random-card__content">
+    <ng-container *ngIf="selectedItem">
+      <div>
+        <fa-icon [icon]="selectedItem.icon" size="2x"></fa-icon>
+      </div>
+      <h5>{{ selectedItem.description }}</h5>
+    </ng-container>
+    <div>
+     <!--  <fa-icon
+        *ngIf="!selectedItem"
+        [icon]="spinnerIcon"
+        [pulse]="true"
+        size="2x"
+      ></fa-icon> -->
+    </div>
+  </div>
+</div>

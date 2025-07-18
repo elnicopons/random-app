@@ -1,0 +1,45 @@
+<div class="home container">
+  <div class="row mt-2">
+    <div class="col-12 col-md-3 offset-md-3 mt-3">
+      <app-random-card
+        text="Lugar"
+        [items]="places"
+        [randomize]="randomize"
+      ></app-random-card>
+    </div>
+    <div class="col-12 col-md-3 mt-3">
+      <app-random-card
+        text="Tiempo"
+        [items]="times"
+        [randomize]="randomize"
+      ></app-random-card>
+    </div>
+    <div class="col-12 col-md-3 offset-md-3 mt-3">
+      <app-random-card
+        text="Acción"
+        [items]="actions"
+        [randomize]="randomize"
+      ></app-random-card>
+    </div>
+    <div class="col-12 col-md-3 mt-3">
+      <app-random-card
+        text="Velocidad"
+        [items]="speeds"
+        [randomize]="randomize"
+      ></app-random-card>
+    </div>
+  </div>
+  <div class="row mt-5">
+    <div class="col-12 home__buttons">
+      <app-button
+        text="Randomize"
+        (onClick)="randomizeEverything()"
+      ></app-button>
+      <app-button
+        [text]="timerText"
+        [icon]="timerIcon"
+        (onClick)="startStopTimer()"
+      ></app-button>
+    </div>
+  </div>
+</div>

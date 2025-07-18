@@ -1,0 +1,10 @@
+<div class="bar-container">
+  <div
+    class="bar"
+    [ngStyle]="{
+      width: percentage + '%',
+      'background-color': getColor(percentage)
+    }"
+    [ngClass]="{ 'enable-animation': enableAnimation, colored }"
+  ></div>
+</div>

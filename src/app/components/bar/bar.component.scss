@@ -1,0 +1,42 @@
+@use "sass:color";
+@import "variables";
+@import "mixins";
+
+.bar-container {
+  height: 30px;
+  width: 100%;
+  border: $border-width-thin solid $border-grey;
+  border-radius: $border-radius;
+  overflow: hidden;
+  @include shadow;
+}
+
+.bar {
+  height: 100%;
+  border-radius: calc($border-radius - 2px);
+  transform-origin: left;
+
+  &:not(.colored) {
+    background: linear-gradient(
+      90deg,
+      color.adjust($primary-color-dark, $lightness: -10%) 0%,
+      $primary-color 100%
+    );
+  }
+
+  &.enable-animation {
+    animation: bar-animation 1s infinite alternate ease-in-out;
+  }
+}
+
+@keyframes bar-animation {
+  0% {
+    transform: scaleX(1);
+  }
+  25% {
+    transform: scaleX(1);
+  }
+  100% {
+    transform: scaleX(0.95);
+  }
+}

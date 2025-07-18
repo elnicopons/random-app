@@ -1,0 +1,11 @@
+<div class="line__wrapper" [ngClass]="{reverse}">
+  <div
+    *ngFor="let line of lineElements"
+    class="line__item"
+    [ngClass]="[
+      enableAnimation ? 'enable-animation' : '',
+      line.heightClass,
+      line.widthClass
+    ]"
+  ></div>
+</div>
