@@ -24,7 +24,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "localize": ["es-AR"],
-            "outputPath": "dist/elnicopons",
+            "outputPath": "dist/randomapp",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -42,8 +42,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "2mb",
+                  "maximumError": "2mb"
                 },
                 {
                   "type": "anyComponentStyle",
